@@ -6,6 +6,7 @@ models/
 plots/
 data/generated_sets/
 docs/
+data/
 
 
 __pycache__/

@@ -15,7 +15,7 @@ from DatasetLoader import OnehotDatasetSplit
 
 
 # Path for specification file.
-spesification_file = './Specification.yaml'
+spesification_file = '../Specification.yaml'
 
 # Opens the file and loads it as a dict.
 with open(spesification_file, "r") as file:

@@ -12,7 +12,7 @@ model_config:
 
 
   model_param:
-    model_type: 'CNN_23x3'              # Which model to use
+    model_type: 'CNN_relu'              # Which model to use
     loss_type: 'cross_entropy'     # Which loss function to use
     optimizer_type: 'sgd'          # Which optimiser to use
 
@@ -29,7 +29,7 @@ model_config:
 
   pre_trained:
     use_pre_trained_param: False      # Whether to use a pre trained model
-    use_saved_model: True            # Whether to use the hyper parameters used during training or use the ones in this file.
+    use_saved_model: False            # Whether to use the hyper parameters used during training or use the ones in this file.
     path_saved_model: 'relu23x3'        # Name of the folder of the trained model.
 
 
