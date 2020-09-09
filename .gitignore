@@ -1,0 +1,15 @@
+# Too large to store on git, but can be generated from the dataset from ImmuneML
+onehot_encoded/
+
+
+models/
+plots/
+data/generated_sets/
+docs/
+
+
+__pycache__/
+.idea
+.DS_Store
+*.txt
+*.tsv

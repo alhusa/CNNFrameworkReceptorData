@@ -1,0 +1,48 @@
+model_config:
+  paths:
+    dataset_path: '/data/onehot_encoded/onehot_generated_seq.pickle'
+
+  # Hyperparameters
+  hyper_param:
+    n_epoch: 100               # Number of epochs to run the training or test
+    learning_rate: 0.01           # Learning rate of the optimizer
+    test_split_pr: 0.2         # The percentage of data to be used for testing
+    batch_size: 100               # Size of the mini batch
+    max_data: 100000                # Max number of datapoints
+
+
+  model_param:
+    model_type: 'CNN_23x3'              # Which model to use
+    loss_type: 'cross_entropy'     # Which loss function to use
+    optimizer_type: 'sgd'          # Which optimiser to use
+
+  utils:
+    run_vis: True                   # Whether to generate visualisation plots or not.
+    train_model: True               # Whether to train the model or not. (Should be true if a pre trained model is not used)
+    verbose: True                  # Whether to print information during the the run.
+    save_model: True                # Whether to save the model after the run or not.
+    save_model_name: 'relu23x3' # Name of the folder to place the model
+
+  plot:
+    save_fig: True                 # Whether to save the plots.
+    plot_folder_name: 'generated_data/23x1CNN'  # Name of the folder to save the plots.
+
+  pre_trained:
+    use_pre_trained_param: False      # Whether to use a pre trained model
+    use_saved_model: True            # Whether to use the hyper parameters used during training or use the ones in this file.
+    path_saved_model: 'relu23x3'        # Name of the folder of the trained model.
+
+
+visual:
+  num: 10 # Number of maps to be created. Must be less than the batch size
+  saliency_map:
+    guied: False # Guided or not. TODO: Only non guided works currently.
+#  genereate_max_input:
+#    lamb: 0.001
+#    learning_rate: 0.1
+#    iterations: 10000
+#    fig_each_iter: 1000
+  SNP:
+  visualize_kernel:
+  visualize_layer:
+
